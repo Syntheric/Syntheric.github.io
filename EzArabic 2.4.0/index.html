@@ -1,0 +1,280 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <title>EzArabic</title>
+   <meta content="" name="description">
+   <meta content="" name="keywords">
+   <link href="assets/img/icon.png" rel="icon">
+   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <link href="assets/css/fonts.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/style.css" rel="stylesheet">
+ </head>
+
+ <body>
+
+   <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+     <div class="container d-flex align-items-center ">
+       <a href=""><img src="assets/img/icon.png" class="logoico" alt="logo"></a>
+       <h1 class="logo me-auto ">
+         <a href="index.html">Ez Arabic</a>
+       </h1>
+       <nav id="navbar" class="navbar order-last order-lg-0">
+         <ul>
+           <li>
+             <a class="nav-link scrollto active" href="#hero">Home</a>
+           </li>
+           <li>
+             <div class="dropdown">
+               <a class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Tools
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                 <li><a class="dropdown-item" href="#tool">Converter</a></li>
+                 <li><a class="dropdown-item" href="#table1">Table List</a></li>
+               </ul>
+             </div>
+           </li>
+           <li>
+             <a class="nav-link scrollto" style="cursor: pointer" data-toggle="modal" data-target="#about">About</a>
+           </li>
+         </ul>
+         </li>
+         </ul>
+         <a class="nav-link scrollto" data-toggle="modal" data-target="#about"><i class="bi bi-list mobile-nav-toggle "></i></a>
+       </nav>
+       <!-- .navbar -->
+       <div class="social-links">
+         <a href="https://www.youtube.com/c/HidayatulQuranPPDU">
+           <i class="bi bi-youtube"></i>
+         </a>
+         <a href="https://www.instagram.com/ribath.hidayatulquran/">
+           <i class="bi bi-instagram"></i>
+         </a>
+         <a class="nav-link scrollto" data-toggle="modal" data-target="#setting"><i class="bi bi-gear" style="font-size:2em; "></i></a>
+       </div>
+     </div>
+
+   </header>
+
+   <div class="fixed-bottom alert alert-info alert-dismissible fade js-alert alert-primary" role="alert" id="myalert">
+     <strong>Success! </strong>
+     Text Has Been Copied
+   </div>
+
+   <!-- End Header -->
+   <section id="hero" class="clearfix">
+     <div class="container d-flex h-100">
+       <div class="row justify-content-center align-self-center" data-aos="fade-up">
+         <div class="col-lg-6 intro-info order-lg-first order-last" data-aos="zoom-in" data-aos-delay="100">
+           <h2>When you are<br>too<span>
+               Smart</span> to type in Arabic</h2>
+           <div>
+             <a href="#tool" class="btn-get-started scrollto">Get Started</a>
+           </div>
+         </div>
+         <div class="col-lg-6 intro-img order-lg-last order-first text-center" data-aos="zoom-out" data-aos-delay="200">
+           <img src="assets/img/icon.png" alt="" class="img-fluid lol">
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <main id="main">
+     <section id="tool" class="tool">
+       <div class="container" data-aos="fade-up">
+         <div class="row">
+           <form>
+             <label for="input">Input</label>
+             <div class="fcontainer">
+               <div class="formarea">
+                 <div class="form-group">
+                   <textarea class="form-control" rows="6" id="input" autocomplete="off"></textarea>
+                   </a>
+                 </div>
+               </div>
+               <!-- <div class="keyboard">
+                <button type="button" class="btn btn-secondary" onclick="addTextAtCaret('input','!')">-َ</button>
+              </div> -->
+             </div>
+             <div class="form-group">
+               <label for="output">Output</label>
+               <br>
+               <textarea class="form-control right" rows="6" id="output" disabled="disabled"></textarea>
+               <input type="range" placeholder="idk" style="--min: 14;
+						 --max: 75;
+						 --val: 25" step=".0002" id="slider" />
+             </div>
+             <br>
+             <button type="button" class="btn btn-primary" id="copybtn" onclick="copy('output','val')" style="width: 100px;">Copy text</button>
+           </form>
+           <br>
+           <div class="tablegrid">
+             <h3 class="tabletitle tengah">Convertation Table List</h3>
+             <h5 class="table1title tengah">Mode Normal</h5>
+             <div class="tengah" id="table1"> </div>
+             <h5 class="table2title tengah">Mode Legacy</h5>
+             <div class="tengah" id="table2"> </div>
+           </div>
+         </div>
+       </div>
+     </section>
+   </main>
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer" class="section-bg">
+     <div class="container">
+       <div class="copyright tengah">
+         &copy; Copyright
+         <strong>Valk</strong>.
+       </div>
+       <div class="credits">
+         <!-- https://bootstrapmade.com/license/ https://bootstrapmade.com/buy/?theme=Rapid -->
+         <!--"https://bootstrapmade.com/" lol jangan dibaca :D-->
+       </div>
+     </div>
+   </footer>
+   <!-- End Footer -->
+
+   <!-- Modals Div -->
+   <div>
+
+     <div class="modal fade padding-auto" id="setting" tabindex="1" role="dialog" aria-labelledby="settingModal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header border-bottom-0">
+             <h3 class="modal-title">Setting</h3>
+             <button type="button" class="btn-close" data-dismiss="modal"></button>
+           </div>
+           <!-- <a data-toggle="modal" data-target="#templateEdit" class="flex-item" href="">Edit Template </a> -->
+           <div class="modal-body">
+             <h6><strong>Module :</strong></h6>
+             <select id="moduleSelect" class="form-select" aria-label="Default select example">
+             </select> <br>
+             <h6><strong>Auto Scroll :</strong></h6>
+             <label class="switch">
+               <input type="checkbox" id="autoScroll" checked>
+               <span class="slider round"></span>
+             </label>
+             <br><br>
+             <h6><strong>Reverse Translate :</strong></h6>
+             <label class="switch">
+               <input type="checkbox" id="reverse">
+               <span class="slider round"></span>
+             </label>
+             <br><br>
+             <h6><strong>Table on Click</strong></h6>
+             <form action="index.html" method="post">
+               <select id="tablefeature" class="form-select" aria-label="Default select example">
+                 <option selected value="copy">Copy</option>
+                 <option value="insert">Insert</option>
+               </select>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="modal fade padding-auto" id="about" tabindex="0" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header border-bottom-0">
+             <h3 class="modal-title">About</h3>
+             <button type="button" class="btn-close" data-dismiss="modal"></button>
+           </div>
+           <div class="modal-body">
+             <h5><strong>EzArabic</strong></h5>
+             <div class="wrap-flex">
+               <p id="vrs"></p>
+               <a data-toggle="modal" data-target="#log" class="flex-item" href="">changelog</a>
+             </div>
+             <h5><strong>Database Version</strong></h5>
+             <p id="dbversion"></p>
+             <h5><strong>Credit</strong></h5>
+             <strong>Coder :</strong>
+             <p>Valkofar</p>
+             <strong>Contributors :
+             </strong><br>
+             <span>Shizuken</span><br>
+             <span>MrSyntheric</span><br>
+             <span>BlackFlag</span><br>
+             <span>Pid'z</span>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="modal fade log modal-lg padding-auto" id="log" tabindex="4" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header border-bottom-0">
+             <h3 class="modal-title">Changelog</h3>
+             <button type="button" class="btn-close" data-dismiss="modal"></button>
+           </div>
+           <div class="modal-body">
+             <div class="logclass">
+               <p id="logId">
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="modal fade log modal-lg padding-auto" id="templateEdit" tabindex="4" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header border-bottom-0">
+             <h3 class="modal-title">Edit Template</h3>
+             <button type="button" class="btn-close" data-dismiss="modal"></button>
+           </div>
+           <div class="modal-body">
+             <div class="logclass">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="modal fade padding-auto" id="confirm" tabindex="2" role="dialog" aria-labelledby="confirmModal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+         <div class="modal-content">
+           <div class="modal-header border-bottom-0">
+             <h3 class="modal-title">Are Ya Sure?</h3>
+             <button type="button" class="btn-close" data-dismiss="modal"></button>
+           </div>
+           <div class="modal-body">
+             Switching The Mode can destroy some Character's Life!
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal" id="canceled">Close</button>
+             <button type="button" class="btn btn-primary" data-dismiss="modal" id="confirmed">Confirm</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+   </div>
+   <!-- End Modals -->
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+     <i class="bi bi-arrow-up-short"></i>
+   </a>
+   <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.js"></script> -->
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src='assets/vendor/javascript/jquery.js'></script>
+   <script src='assets/vendor/javascript/bootstrap4.js'></script>
+   <script src='assets/vendor/javascript/popper.js'></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/module.js"></script>
+   <script src="assets/js/converter.js"></script>
+   <script src="assets/js/keyboard.js"></script>
+   <script src="assets/js/table.js"></script>
+   <script src="assets/js/log.js"></script>
+
+ </body>
+
+ </html>
